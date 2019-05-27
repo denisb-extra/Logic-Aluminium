@@ -290,7 +290,8 @@ section.contact {
 				@include f-r;
 				font-size: 36px;
 			    line-height: 36px;
-			    color: #646772;
+				color: #646772;
+				margin-right: 78px;
 			}
 			.item {		
 				white-space: nowrap;
@@ -303,7 +304,7 @@ section.contact {
 					vertical-align: middle;
 				}
 				.icon {
-					margin-left: 15px;
+					margin-left: 30px;
 				}
 				.text {
 					white-space: normal;
@@ -357,9 +358,11 @@ section.contact {
 				
 					background: #f7f7f7;
 					outline: none;
-					padding: 10px;
+				//	padding: 5px;
 					width: 100%;
 					height: 100%;
+
+					padding: 5px 15px;
 
 					&:focus {
 					}
@@ -377,7 +380,7 @@ section.contact {
 				input[type="submit"] {
 					background: #9ca5ab;
 					@include f-r;
-					font-size: 24px;
+					font-size: 20px;
 					color: #fff;
 					padding: 0px 25px;
 					display: inline-block;
@@ -386,7 +389,8 @@ section.contact {
 					margin-top: 10px;
 					position: absolute;
 					bottom: 15px;
-    				left: 15px;
+					left: 15px;
+					
 				}
 
 				span[role="alert"] {
