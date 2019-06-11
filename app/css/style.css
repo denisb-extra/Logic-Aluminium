@@ -640,13 +640,31 @@ section.content-columns .rows .row {
       margin-top: 20px; }
       section.content-columns .rows .row .content p:first-child {
         margin-top: 0; }
+      section.content-columns .rows .row .content p .before-paragraph {
+        display: inline-block;
+        float: right;
+        margin-left: 10px;
+        height: 37px;
+        width: 37px;
+        background: url("../images/icons/before-p.png"); }
     section.content-columns .rows .row .content .image-with-desc {
       margin-top: 20px; }
       section.content-columns .rows .row .content .image-with-desc img {
         width: 100%; }
       section.content-columns .rows .row .content .image-with-desc p.desc {
         border-bottom: 1px solid #646772;
-        margin-top: 15px; }
+        margin-top: 15px;
+        position: relative; }
+        section.content-columns .rows .row .content .image-with-desc p.desc .num {
+          position: absolute;
+          top: -12px;
+          left: 0;
+          font-size: 12px; }
+    section.content-columns .rows .row .content .youtube-video {
+      width: 100%;
+      margin-top: 20px; }
+      section.content-columns .rows .row .content .youtube-video iframe {
+        width: 100%; }
     section.content-columns .rows .row .content .cut-with-desc {
       margin-top: 20px; }
       section.content-columns .rows .row .content .cut-with-desc p {
@@ -718,6 +736,22 @@ section.project-header {
     border-top: 2px solid #687177;
     padding-top: 50px;
     padding-bottom: 50px; }
+  section.project-header .button {
+    font-family: 'esphimere-regular', 'fbreformaen-regular';
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #646772;
+    border: 2px solid #646772;
+    padding: 10px;
+    float: left;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    section.project-header .button:hover {
+      color: #fff;
+      background: #646772; }
+  section.project-header .wrapper {
+    max-width: 70%; }
   section.project-header .project-title {
     background: #dbe6eb;
     font-family: 'esphimere-regular', 'fbreformaen-regular';
@@ -766,6 +800,16 @@ section.project-header {
       section.project-header .section-inner {
         padding-top: 30px;
         padding-bottom: 30px; }
+      section.project-header .wrapper {
+        max-width: 100%;
+        padding-bottom: 25px; }
+      section.project-header .button {
+        float: none;
+        font-size: 18px;
+        padding: 5px;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
       section.project-header .project-title {
         font-size: 35px;
         line-height: 35px; }
@@ -909,6 +953,16 @@ section.contact .wrapper-contact {
         position: absolute;
         bottom: 15px;
         left: 15px; }
+      section.contact .wrapper-contact .part-form .wpcf7 .acceptance-215 {
+        font-family: 'esphimere-regular', 'fbreformaen-regular';
+        font-weight: normal;
+        font-size: 18px;
+        position: absolute;
+        bottom: -30px;
+        right: 0; }
+        section.contact .wrapper-contact .part-form .wpcf7 .acceptance-215 input {
+          width: auto;
+          height: auto; }
       section.contact .wrapper-contact .part-form .wpcf7 span[role="alert"] {
         font-family: 'esphimere-regular', 'fbreformaen-regular';
         font-weight: normal;
@@ -946,7 +1000,8 @@ section.contact .wrapper-contact {
         section.contact .wrapper-contact .part-contacts .item .text .p-text {
           font-size: 18px; }
       section.contact .wrapper-contact .part-form {
-        margin-top: 35px; } }
+        margin-top: 35px;
+        padding-bottom: 35px; } }
 
 /* --------------------- /Section contact ---------------------- */
 /* ---------------------- Section content-bottom ---------------------- */
