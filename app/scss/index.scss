@@ -277,7 +277,7 @@ section.top {
 		height: 100%;
 		overflow: hidden;
 		img {
-			width: auto;
+		//	width: auto;
 			height: 100%;
 		}
 		.owl-item {
@@ -602,7 +602,7 @@ footer {
 
 			&:hover {
 				.text {
-					color: #000;
+					color: #d2d2d2;
 				}
 			}
 		}
@@ -623,6 +623,11 @@ footer {
 			border-left: 1px solid #fff; 
 			&:last-child {
 				border-left: none;
+			}
+			&:hover {
+				a {
+					color:#d2d2d2;
+				}
 			}
 			a {
 				display: inline-block;
